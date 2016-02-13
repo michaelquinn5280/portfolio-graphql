@@ -5,9 +5,9 @@
   "repository": {
     "url": "https://github.com/michaelquinn5280/Portfolio"
   },
-  "main": "launcher.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node --harmony launcher.js"
+    "start": "node server.js"
   },
   "author": "Michael",
   "license": "ISC",
