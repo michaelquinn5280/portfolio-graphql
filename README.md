@@ -60,6 +60,14 @@ GraphQL endpoint for Portfolio application
 	}
 }
 ========================
+{
+    Copyright(profileId: "5605d7bf-ecd0-4c05-b481-514d8b830bfa") { 
+      CompanyName,
+      CopyrightStartYear,
+      CopyrightEndYear,
+    }
+}
+========================
 4. Open your browser to http://localhost:8080/schema to view schema.
 ========================
 
