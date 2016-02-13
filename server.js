@@ -1,2 +1,5 @@
-require('babel/register');
-require('./bootstraper');
+require('babel-register')({
+   presets: [ 'es2015' ]
+});
+
+require("./app");
