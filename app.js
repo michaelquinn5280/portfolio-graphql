@@ -1,6 +1,7 @@
-import express from 'express';
 import graphqlHTTP from 'express-graphql';
 import { PortfolioSchema } from './portfolioSchema.js';
+
+let express = require('express');
 
 let path = require('path'); 
 let port = process.env.PORT || 8080;

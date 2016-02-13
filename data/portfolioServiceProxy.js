@@ -1,6 +1,6 @@
-var request = require('request-promise');
+import request from 'request-promise';
 //var endpoint = 'http://localhost:3741/api/';
-var endpoint = 'http://cvservices.azurewebsites.net/api/';
+let endpoint = 'http://cvservices.azurewebsites.net/api/';
 
 export function getPortfolio(referenceValue) {
     console.log('getPortfolio called with referenceValue: ', referenceValue);

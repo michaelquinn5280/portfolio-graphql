@@ -1,12 +1,12 @@
 {
   "name": "portfolio-graphql",
   "version": "0.1.0",
-  "description": "GraphQL server Portfolio schema with GraphiQL",
+  "description": "GraphQL server for a cv portfolio schema with graphiql",
   "repository": {
     "url": "https://github.com/michaelquinn5280/Portfolio"
   },
   "main": "server.js",
-  "author": "Michael",
+  "author": "Michael Quinn",
   "license": "ISC",
   "dependencies": {
     "babel-register": "^6.5.2",
