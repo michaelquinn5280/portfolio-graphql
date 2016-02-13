@@ -1,6 +1,23 @@
-var http = require('http');
-http.createServer(function (req, res) {
-    console.log('Got request for ' + req.url);
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end('<h1>Hello Code and Azure Web Apps!</h1>');
-}).listen(process.env.PORT);
+import express from 'express';
+import graphqlHTTP from 'express-graphql';
+
+var path = require('path');
+
+export default function(schema, port) {
+  var app = express();
+  app.use(express.static(path.join(__dirname, 'static')));
+  app.use('/graphql', graphqlHTTP(function() {
+    return {
+      schema: schema
+    };
+  }));
+
+  app.use('/schema', function(req, res, _next) {
+    var printSchema = require('graphql/utilities/schemaPrinter').printSchema;
+    res.set('Content-Type', 'text/plain');
+    res.send(printSchema(schema));
+  });
+
+  app.listen(port);
+  console.log(`Started on http://localhost:${port}/`);
+}
