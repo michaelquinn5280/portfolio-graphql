@@ -8,6 +8,7 @@ import {
   GraphQLString,
   GraphQLInt,
   GraphQLID,
+  GraphQLBoolean
 } from 'graphql';
 
 //import { getPortfolio, getContactInfo, getContactAttempts, getGreeting, getSiteInfo, getLegal, getProfile, getProjects } from './data/portfolioServiceProxyMock.js';
@@ -22,7 +23,8 @@ var projectType = new GraphQLObjectType( {
         Description: { type: GraphQLString },
         StartDate: { type: GraphQLString },
         EndDate: { type: GraphQLString },
-        Priority: { type: GraphQLInt }
+        Priority: { type: GraphQLInt },
+        Milestone: { type: GraphQLBoolean }
     })
 });
 

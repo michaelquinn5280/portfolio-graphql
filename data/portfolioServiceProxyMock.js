@@ -152,7 +152,7 @@ var employers = [
             "Estimate, design, develop, review, migrate, test, and document solutions.",
             "Performance tune and load test applications with memory and performance problems.",
             "Delivering software using Agile methodologies.",
-            "Managed team of developers as the Web Platforms’ Client Experience team.",
+            "Managed team of developers as the Web Platformsï¿½ Client Experience team.",
             "TFS administration for merging, branching, and deploying code."]
     },
     {
@@ -206,7 +206,8 @@ export function getProjects(profileId) {
             Description: "SAML based single sign-on authentication for Workspace application using Ping One and Ping Federate.",
             StartDate: "2015-08-01T07:00:00Z",
             EndDate: "2016-02-01T08:00:00Z",
-            Priority: 1
+            Priority: 1,
+            Milestone: false
         },
         {
             Id: "56ae59933a515520e84b84b0",
@@ -215,7 +216,8 @@ export function getProjects(profileId) {
             Description: "Used Bootstrap, Angular, Web APIs, and EF to demonstrate a core system that can be easily extended to support new business verticals.",
             StartDate: "2015-10-01T07:00:00Z",
             EndDate: "2016-01-01T08:00:00Z",
-            Priority: 2
+            Priority: 2,
+            Milestone: false
         },
         {
             Id: "56ae59933a515520e84b84b1",
@@ -224,7 +226,8 @@ export function getProjects(profileId) {
             Description: "Generates near real time Beacon framework performance metrics from logged SLAB events using SSIS.",
             StartDate: "2015-08-01T07:00:00Z",
             EndDate: "2015-11-01T07:00:00Z",
-            Priority: 3
+            Priority: 3,
+            Milestone: false
         }];
     return projects;
 }
